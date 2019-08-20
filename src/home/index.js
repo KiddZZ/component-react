@@ -12,14 +12,20 @@ export default class HomePage extends Component {
   toNew = () => {
     this.props.history.push("/new");
   };
+  toExtends = () => {
+    this.props.history.push("/extends");
+  };
+  toHOC = () => {
+    this.props.history.push("/hoc");
+  };
   render() {
     return (
       <Content>
         <div>
           <Row>
-            <Col md ></Col>
+            <Col md />
           </Row>
-          <Button size="large" type="primary" onClick={this.toDfs}>                                          
+          <Button size="large" type="primary" onClick={this.toDfs}>
             深拷贝
           </Button>
         </div>
@@ -31,6 +37,16 @@ export default class HomePage extends Component {
         <div>
           <Button type="primary" onClick={this.toNew}>
             手撸一个new
+          </Button>
+        </div>
+        <div>
+          <Button type="primary" onClick={this.toExtends}>
+            Extends
+          </Button>
+        </div>
+        <div>
+          <Button type="primary" onClick={this.toHOC}>
+            HOC
           </Button>
         </div>
       </Content>

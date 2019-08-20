@@ -4,6 +4,8 @@ import Home from "./home";
 import Dfs from "./demo/dfs";
 import Mobx from "./demo-mobx";
 import NewDemo from "./demo-new";
+import ExtendsDemo from "./demo-extends-component";
+import HOCDemo from "./demo-HOC";
 
 export default class App extends Component {
   render() {
@@ -15,6 +17,8 @@ export default class App extends Component {
             <Route exact path="/dfs" component={Dfs} />
             <Route exact path="/mobx" component={Mobx} />
             <Route exact path="/new" component={NewDemo} />
+            <Route exact path="/extends" component={ExtendsDemo} />
+            <Route exact path="/hoc" component={HOCDemo} />
           </Switch>
         </Router>
       </div>
