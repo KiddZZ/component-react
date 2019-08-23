@@ -6,6 +6,7 @@ import Mobx from "./demo-mobx";
 import NewDemo from "./demo-new";
 import ExtendsDemo from "./demo-extends-component";
 import HOCDemo from "./demo-HOC";
+import ReduxDemo from "./demo-redux";
 
 export default class App extends Component {
   render() {
@@ -19,6 +20,7 @@ export default class App extends Component {
             <Route exact path="/new" component={NewDemo} />
             <Route exact path="/extends" component={ExtendsDemo} />
             <Route exact path="/hoc" component={HOCDemo} />
+            <Route exact path="/redux" component={ReduxDemo} />
           </Switch>
         </Router>
       </div>

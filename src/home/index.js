@@ -18,6 +18,9 @@ export default class HomePage extends Component {
   toHOC = () => {
     this.props.history.push("/hoc");
   };
+  toRedux = () => {
+    this.props.history.push("/redux");
+  };
   render() {
     return (
       <Content>
@@ -47,6 +50,11 @@ export default class HomePage extends Component {
         <div>
           <Button type="primary" onClick={this.toHOC}>
             HOC
+          </Button>
+        </div>
+        <div>
+          <Button type="primary" onClick={this.toRedux}>
+            Redux
           </Button>
         </div>
       </Content>

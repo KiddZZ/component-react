@@ -1,24 +1,26 @@
 import React, { Component } from "react";
-import styled from "styled-components";
-import HOC from "./HOC";
+// import HOCref from "./HOC-ref";
+// import HOCstate from "./HOC-state";
+import HOCII from "./HOC-II";
 
-@HOC
-export default class HOCDemo extends Component {
+// @HOC
+class HOCDemo extends Component {
   state = {
     name: "HOCDemo"
   };
 
-  componentDidMount = () => {};
+  componentDidMount() {
+    console.log(this.state);
+  }
 
   init = () => {
     console.log("demo");
   };
 
   render() {
-    return <Content />;
+    return <input />;
   }
 }
 
-const Content = styled.div`
-  padding: 20px;
-`;
+// export default HOC(HOCDemo);
+export default HOCII(HOCDemo);
